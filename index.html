@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hz</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/home.css" />
+  <link rel="stylesheet" href="src/css/modal.css" />
+</head>
+<body>
+  <section class="home" id="home">
+    <div class="home-sidebar">
+
+      <div class="sidebar">
+
+        <div class="logo">
+          <figure class="logo-image">
+            <img src="src/images/platzi-video.png" alt="Platzi Video - la Plataforma de videos cheveres"/>
+          </figure>
+        </div>
+       <div class="sidebarPlaylist">
+          <h2 class="sidebarPlaylist-title">My Playlist <span class="btn warning">Movies</span> </h2>
+          <ol class="myPlaylist" id="comedyList">
+           <!--este loader se coloca aca y se llama en el .JS -->
+           <!-- <img src="src/images/loader.gif" width="50" height="50" alt=""> -->
+           <!--este loader se coloca aca y se llama en el .JS -->
+          </ol>
+        </div>
+<!--list of random people begining-->
+        <div class="sidebarPlaylist"> 
+          <h2 class="sidebarPlaylist-title">Friends</h2>
+          <ul class="playlistFriends" id="usersList">
+            <!--este loader se coloca aca y se llama en el .JS -->
+           <!-- <img src="src/images/loader.gif" width="50" height="50" alt=""> -->
+           <!--este loader se coloca aca y se llama en el .JS -->
+          </ul>
+        </div>
+<!--list of random people finish -->
+      </div>
+
+    </div>
+    <div class="home-primary">
+      <!-- <section class="primary"> -->
+        <div class="primary-search">
+          <form action="" class="search" id="form">
+            <input type="text" name="name" placeholder="Search your favorite movie"/>
+          </form>
+        </div>
+        <div class="primary-user">
+          <div class="user">
+            <p>
+              <img src="src/images/covers/gorillaz.jpg" alt=""/>
+              <span>Horacio Garcia</span>
+            </p>
+          </div>
+        </div>
+        <div class="primary-list">
+          <div class="primaryPlaylist">
+            <h3 class="primaryPlaylist-topic">A los golpes</h3>
+            <h2 class="primaryPlaylist-title">Acción</h2>
+            <div class="primaryPlaylist-list" id="action">
+<!--este loader se coloca aca y se llama en el .JS -->
+              <img src="src/images/loader.gif" width="50" height="50" alt="">
+<!--este loader se coloca aca y se llama en el .JS -->
+            </div>
+          </div>
+          <div class="primaryPlaylist">
+            <h3 class="primaryPlaylist-topic">Para llorar</h3>
+            <h2 class="primaryPlaylist-title">Drama</h2>
+            <div class="primaryPlaylist-list" id="drama">
+<!--este loader se coloca aca y se llama en el .JS -->
+              <img src="src/images/loader.gif" width="50" height="50" alt=""> 
+<!--este loader se coloca aca y se llama en el .JS -->
+            </div>
+          </div>
+          <div class="primaryPlaylist">
+            <h3 class="primaryPlaylist-topic">Dibujitos animados</h3>
+            <h2 class="primaryPlaylist-title">Animación</h2>
+            <div class="primaryPlaylist-list" id="animation">
+<!--este loader se coloca aca y se llama en el .JS -->
+              <img src="src/images/loader.gif" width="50" height="50" alt="">
+<!--este loader se coloca aca y se llama en el .JS -->
+            </div>
+          </div>
+        </div>
+      <!-- </section> -->
+    </div>
+    <div class="home-featuring" id="featuring">
+<!--Adentro de este div se encuentra el div que llamamos desde el archivo 
+  javascript cuando buscamos una pelicula y este aparece -->
+    </div>
+  </section>
+  <div class="overlay" id="overlay">
+  </div>
+  <div class="modal" id="modal">
+    <h1>Título de pelicula</h1>
+    <div class="modal-content">
+      <img src="" alt="" width="170" height="256">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+    </div>
+    <div class="modal-buttons">
+      <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="src/js/home.js"></script>
+</body>
+</html>
